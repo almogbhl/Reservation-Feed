@@ -1,0 +1,38 @@
+{
+	"env": {
+		"node": true,
+		"es6": true,
+		"jest": true,
+		"browser": true
+	},
+	"globals": {
+		"__DEV__": false
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/resolver": {
+			"alias": {
+				"map": [
+					["@upstay", "./"],
+					["@ups", "./src"]
+				],
+				"extensions": [".js", ".json"]
+			}
+		}
+	},
+	"extends": [
+		"eslint:recommended",
+		"prettier",
+		"plugin:react/recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+	"rules": {}
+}
